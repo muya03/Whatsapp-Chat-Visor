@@ -1,0 +1,5 @@
+texto suelto antes del primer mensaje
+14/12/22, 9:00 - Ana: lista:
+14/12/22 es la fecha límite
+[14/12/22] tampoco es cabecera
+14/12/22, 9:01 - Beto: ok

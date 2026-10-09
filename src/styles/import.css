@@ -1,0 +1,49 @@
+.landing { position: fixed; inset: 0; height: var(--vv-height, 100dvh); display: flex; flex-direction: column; background: var(--c-app-bg); overflow: hidden; padding: var(--safe-top) var(--safe-right) 0 var(--safe-left); }
+.landing__bar { display: flex; align-items: center; gap: 10px; padding: 14px 20px 0; flex: none; }
+.landing__bar .spacer { flex: 1; }
+.landing__brand { display: flex; align-items: center; gap: 10px; font-weight: 500; font-size: 17px; color: var(--c-text-2); }
+.landing__brand img { width: 30px; height: 30px; border-radius: 8px; }
+.landing__scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 18px 20px calc(28px + var(--safe-bottom)); }
+.landing__col { width: min(100%, 640px); margin-inline: auto; display: grid; gap: 22px; }
+.landing h1 { font-size: 30px; font-weight: 300; line-height: 1.2; color: var(--c-text); }
+.landing__lead { color: var(--c-text-2); font-size: 15.5px; line-height: 1.5; margin-top: 8px; }
+
+.drop {
+  display: grid; justify-items: center; gap: 14px; padding: 34px 22px; text-align: center; width: 100%;
+  border: 2px dashed color-mix(in srgb, var(--c-text-3) 70%, transparent); border-radius: 14px; background: var(--c-panel-bg);
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+.drop[data-over='true'], .drop:focus-within { border-color: var(--c-accent); background: color-mix(in srgb, var(--c-accent) 6%, var(--c-panel-bg)); }
+.drop__icon { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--c-accent) 14%, transparent); color: var(--c-accent-strong); }
+.drop__icon svg { fill: currentColor; width: 30px; height: 30px; }
+.drop__title { font-size: 18px; color: var(--c-text); }
+.drop__hint { font-size: 13.5px; color: var(--c-text-2); }
+.drop input[type='file'] { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+
+.facts { display: grid; gap: 10px; padding: 16px 18px; border-radius: 12px; background: var(--c-panel-bg); font-size: 14px; color: var(--c-text-2); line-height: 1.45; }
+.facts li { display: flex; gap: 12px; align-items: flex-start; }
+.facts svg { fill: var(--c-accent-strong); width: 20px; height: 20px; margin-top: 1px; }
+.howto { border-radius: 12px; background: var(--c-panel-bg); overflow: hidden; }
+.howto summary { cursor: pointer; padding: 14px 18px; font-size: 15px; color: var(--c-text); list-style: none; display: flex; align-items: center; justify-content: space-between; }
+.howto summary::-webkit-details-marker { display: none; }
+.howto summary::after { content: '+'; font-size: 22px; color: var(--c-text-2); }
+.howto[open] summary::after { content: '–'; }
+.howto__body { padding: 0 18px 16px; display: grid; gap: 14px; font-size: 14px; color: var(--c-text-2); line-height: 1.5; }
+.howto__body h3 { font-size: 14px; color: var(--c-text); font-weight: 500; margin-bottom: 4px; }
+.howto ol { margin: 0; padding-inline-start: 20px; }
+
+.progress { display: grid; gap: 16px; justify-items: center; padding: 40px 22px; text-align: center; background: var(--c-panel-bg); border-radius: 14px; }
+.progress__bar { width: min(100%, 360px); height: 6px; border-radius: 3px; background: var(--c-input-bg); overflow: hidden; }
+.progress__bar i { display: block; height: 100%; background: var(--c-accent); border-radius: 3px; transition: width var(--t-med) linear; }
+.progress__stage { font-size: 16px; color: var(--c-text); }
+.progress__file { font-size: 13px; color: var(--c-text-2); overflow-wrap: anywhere; }
+
+.errbox { display: grid; gap: 12px; padding: 22px; background: var(--c-panel-bg); border-radius: 14px; border-inline-start: 5px solid var(--c-danger); }
+.errbox h2 { font-size: 19px; font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.errbox h2 svg { fill: var(--c-danger); width: 24px; height: 24px; }
+.errbox p, .errbox li { font-size: 14.5px; color: var(--c-text-2); line-height: 1.5; }
+.errbox ul { padding-inline-start: 20px; margin: 0; list-style: disc; }
+.errbox__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+
+.saved { display: grid; gap: 4px; background: var(--c-panel-bg); border-radius: 12px; padding: 8px 14px; }
+.saved h2 { font-size: 14px; color: var(--c-text-2); font-weight: 400; padding: 6px 0; }

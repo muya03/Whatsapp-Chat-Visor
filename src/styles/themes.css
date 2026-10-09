@@ -1,0 +1,171 @@
+/* Colores de WhatsApp por tema y por skin. Claro/oscuro NO son una inversión: cada valor está definido. */
+
+:root {
+  color-scheme: light;
+  --c-app-bg: #f0f2f5;
+  --c-panel-bg: #ffffff;
+  --c-header-bg: #f0f2f5;
+  --c-header-fg: #111b21;
+  --c-header-sub: #54656f;
+  --c-input-bg: #f0f2f5;
+  --c-border: #e9edef;
+  --c-text: #111b21;
+  /* Un punto más oscuros que los de WhatsApp (#667781) para cumplir WCAG AA (4,5:1) sobre #f0f2f5 y burbujas verdes. */
+  --c-text-2: #54656f;
+  --c-text-3: #6b7b85;
+  --c-icon: #54656f;
+  --c-accent: #00a884;
+  --c-accent-strong: #008069;
+  --c-accent-contrast: #ffffff;
+  --c-btn-bg: #008069;
+  --c-btn-bg-hover: #006e5a;
+  --c-btn-fg: #ffffff;
+  --c-hover: #f5f6f6;
+  --c-selected: #f0f2f5;
+  --c-focus: #00a884;
+  --c-danger: #ea0038;
+  --c-warn-bg: #fff3c4;
+  --c-warn-fg: #54440e;
+
+  --c-chat-bg: #efeae2;
+  --c-doodle: rgba(11, 20, 26, 0.06);
+  --c-bubble-in: #ffffff;
+  --c-bubble-out: #d9fdd3;
+  --c-bubble-text: #111b21;
+  --c-bubble-time: #53646e;
+  --c-bubble-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+  --c-link: #027eb5;
+  --c-quote-in: #f5f6f6;
+  --c-quote-out: #cfe9ba;
+  --c-quote-bar: #06cf9c;
+  --c-chip-bg: rgba(255, 255, 255, 0.95);
+  --c-chip-fg: #54656f;
+  --c-notice-bg: #ffeecd;
+  --c-notice-fg: #54656f;
+  --c-hl: #ffe27a;
+  --c-hl-current: #ffb800;
+  --c-media-ph: #e9edef;
+  --c-media-ph-fg: #8696a0;
+  --c-card-in: #f0f2f5;
+  --c-card-out: #cfe9ba;
+  --c-scrim: rgba(11, 20, 26, 0.5);
+  --c-viewer-bg: #0b141a;
+  --c-viewer-fg: #e9edef;
+  --c-menu-bg: #ffffff;
+  --c-menu-shadow: 0 2px 5px 0 rgba(11, 20, 26, 0.26), 0 2px 10px 0 rgba(11, 20, 26, 0.16);
+  --c-dialog-bg: #ffffff;
+  --c-footer-bg: #f0f2f5;
+  --c-footer-pill: #ffffff;
+  --c-fab-bg: #ffffff;
+  --c-fab-fg: #54656f;
+  --c-fab-shadow: 0 1px 3px rgba(11, 20, 26, 0.3);
+  --c-wave: #8696a0;
+  --c-wave-played: #53bdeb;
+  --c-avatar-bg: #dfe5e7;
+  --c-avatar-fg: #ffffff;
+  --c-skeleton: #e9edef;
+
+  /* Colores de remitente en grupos (legibles sobre burbuja clara) */
+  --sender-0: #1a7f45; --sender-1: #c2185b; --sender-2: #5e44b8; --sender-3: #00695f;
+  --sender-4: #b45309; --sender-5: #3949ab; --sender-6: #ad1457; --sender-7: #795548;
+  --sender-8: #01579b; --sender-9: #4a7a12; --sender-10: #8e24aa; --sender-11: #c62828;
+}
+
+:root[data-resolved-theme='dark'] {
+  color-scheme: dark;
+  --c-app-bg: #0b141a;
+  --c-panel-bg: #111b21;
+  --c-header-bg: #202c33;
+  --c-header-fg: #e9edef;
+  --c-header-sub: #9aa8b1;
+  --c-input-bg: #202c33;
+  --c-border: #222d34;
+  --c-text: #e9edef;
+  --c-text-2: #9aa8b1;
+  --c-text-3: #7d8d97;
+  --c-icon: #aebac1;
+  --c-accent: #00a884;
+  --c-accent-strong: #06cf9c;
+  --c-btn-bg: #00a884;
+  --c-btn-bg-hover: #06cf9c;
+  --c-btn-fg: #0b141a;
+  --c-hover: #202c33;
+  --c-selected: #2a3942;
+  --c-focus: #06cf9c;
+  --c-warn-bg: #3d3412;
+  --c-warn-fg: #ffe9a3;
+
+  --c-chat-bg: #0b141a;
+  --c-doodle: rgba(255, 255, 255, 0.045);
+  --c-bubble-in: #202c33;
+  --c-bubble-out: #005c4b;
+  --c-bubble-text: #e9edef;
+  --c-bubble-time: rgba(233, 237, 239, 0.84);
+  --c-bubble-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+  --c-link: #53bdeb;
+  --c-quote-in: #1d282f;
+  --c-quote-out: #025144;
+  --c-quote-bar: #06cf9c;
+  --c-chip-bg: rgba(24, 34, 41, 0.95);
+  --c-chip-fg: #9aa8b1;
+  --c-notice-bg: #182229;
+  --c-notice-fg: #ffd279;
+  --c-hl: #6b5b00;
+  --c-hl-current: #b88700;
+  --c-media-ph: #1d282f;
+  --c-media-ph-fg: #667781;
+  --c-card-in: #1d282f;
+  --c-card-out: #025144;
+  --c-scrim: rgba(0, 0, 0, 0.65);
+  --c-menu-bg: #233138;
+  --c-menu-shadow: 0 2px 5px 0 rgba(11, 20, 26, 0.26), 0 2px 10px 0 rgba(11, 20, 26, 0.5);
+  --c-dialog-bg: #233138;
+  --c-footer-bg: #202c33;
+  --c-footer-pill: #2a3942;
+  --c-fab-bg: #202c33;
+  --c-fab-fg: #aebac1;
+  --c-fab-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --c-wave: #667781;
+  --c-wave-played: #53bdeb;
+  --c-avatar-bg: #6a7175;
+  --c-skeleton: #1d282f;
+
+  --sender-0: #25d366; --sender-1: #ff7eb6; --sender-2: #b39ddb; --sender-3: #4db6ac;
+  --sender-4: #ffb74d; --sender-5: #8e9cf0; --sender-6: #f06292; --sender-7: #bcaaa4;
+  --sender-8: #4fc3f7; --sender-9: #aed581; --sender-10: #ce93d8; --sender-11: #ef9a9a;
+}
+
+/* ---- Skin Android: barra superior de superficie, burbujas del esquema actual ----
+   Las reglas claras usan :not([data-resolved-theme='dark']) para no pisar al tema oscuro por especificidad. */
+:root[data-skin='android']:not([data-resolved-theme='dark']) {
+  --c-header-bg: #ffffff;
+  --c-header-fg: #111b21;
+  --c-header-sub: #667781;
+  --c-icon: #3b4a54;
+  --c-chat-bg: #efeae2;
+}
+:root[data-skin='android'][data-resolved-theme='dark'] {
+  --c-header-bg: #1f2c34;
+  --c-header-fg: #e9edef;
+  --c-header-sub: #8696a0;
+  --c-icon: #aebac1;
+  --c-bubble-in: #1f2c34;
+  --c-footer-bg: #0b141a;
+}
+
+/* ---- Skin iOS: barra gris translúcida, flechas y acciones en verde ---- */
+:root[data-skin='ios']:not([data-resolved-theme='dark']) {
+  --c-header-bg: #f6f6f6;
+  --c-header-fg: #111b21;
+  --c-icon: #111b21;
+  --c-accent-strong: #00a884;
+  --c-chat-bg: #efe7dd;
+  --c-bubble-out: #d9fdd3;
+}
+:root[data-skin='ios'][data-resolved-theme='dark'] {
+  --c-header-bg: #1f2c34;
+  --c-icon: #e9edef;
+  --c-chat-bg: #0b141a;
+  --c-bubble-in: #1f2c34;
+  --c-footer-bg: #1f2c34;
+}

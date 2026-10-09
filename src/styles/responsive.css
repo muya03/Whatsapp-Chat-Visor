@@ -1,0 +1,42 @@
+/* Móvil: pantalla completa, sin marcos, un panel cada vez (lista → conversación), como WhatsApp. */
+.app--mobile { display: block; }
+.app--mobile .side, .app--mobile .main, .app--mobile .drawer { position: absolute; inset: 0; border: 0; }
+.app--mobile .main { transition: transform var(--t-med) var(--ease), visibility 0s linear 0s; z-index: 2; }
+.app--mobile .main[data-active='false'] { transform: translateX(100%); visibility: hidden; transition: transform var(--t-med) var(--ease), visibility 0s linear var(--t-med); }
+.app--mobile .side { z-index: 1; transition: visibility 0s linear 0s; }
+/* Mientras se lee la conversación el panel lateral no está visible ni es accesible (se oculta al acabar el deslizamiento). */
+.app--mobile .side[data-hidden] { visibility: hidden; transition: visibility 0s linear var(--t-med); }
+.app--mobile .drawer { z-index: 3; animation: slide-in var(--t-med) var(--ease); }
+.app--mobile .hdr__back { display: inline-grid; }
+.app--mobile .hdr { padding-inline: var(--header-pad-inline); }
+.app--mobile .icon-btn { width: var(--touch); height: var(--touch); }
+.app--mobile .hdr__main { gap: 10px; }
+.app--mobile .searchbox .icon-btn { width: 36px; height: 36px; }
+.app--mobile .hdr .searchbox { height: 40px; padding-inline: 4px 0; gap: 4px; }
+.app--mobile .hdr .searchbox__counter { font-size: 12px; }
+.app--mobile .side .hdr { padding-inline: 16px 6px; }
+.app--mobile .searchbox input, .app--mobile .field input, .app--mobile .field select { font-size: 16px; }
+.app--mobile .fab { right: 12px; bottom: 12px; }
+.app--mobile .msglist { padding-left: var(--safe-left); padding-right: var(--safe-right); }
+.app--mobile .footer__pill { font-size: 13px; }
+@keyframes slide-in { from { transform: translateX(100%); } }
+
+/* Menús y diálogos como hoja inferior en móvil */
+.app--mobile ~ .scrim, .scrim--sheet { align-items: end; padding: 0; }
+.scrim--sheet .dialog { width: 100%; max-height: 88dvh; border-radius: 16px 16px 0 0; animation: sheet-in var(--t-med) var(--ease); padding-bottom: var(--safe-bottom); }
+@keyframes sheet-in { from { transform: translateY(100%); } }
+.scrim--sheet .dialog__head { padding-top: 16px; }
+
+@media (max-width: 480px) {
+  .landing h1 { font-size: 25px; }
+  .landing__bar { padding: 10px 14px 0; }
+  .landing__scroll { padding-inline: 14px; }
+  .drop { padding: 26px 16px; }
+}
+@media (orientation: landscape) and (max-height: 520px) {
+  .viewer__caption { max-height: 30dvh; }
+  .landing__scroll { padding-top: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app--mobile .main, .app--mobile .drawer { transition: none; animation: none; }
+}

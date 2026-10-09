@@ -1,0 +1,18 @@
+‎14/12/22, 9:00 - Los mensajes y las llamadas están cifrados de extremo a extremo. Nadie fuera de este chat, ni siquiera WhatsApp, puede leerlos ni escucharlos.
+14/12/22, 9:01 - Ana creó el grupo "Equipo Fantasma"
+14/12/22, 9:01 - Ana añadió a Beto
+14/12/22, 9:02 - Ana: Hola a todos 👋
+14/12/22, 9:03 - Beto: Buenas!
+Segunda línea del mensaje de Beto
+14/12/22, 9:03 - Beto: *negrita* _cursiva_ ~tachado~ y `mono`
+14/12/22, 9:05 - +34 612 34 56 78: Mensaje desde un número sin agenda
+‎14/12/22, 9:10 - Ana: IMG-20221214-WA0001.jpg (archivo adjunto)
+Mira qué foto
+14/12/22, 9:11 - Beto: <Multimedia omitido>
+14/12/22, 9:12 - Beto: Se eliminó este mensaje
+14/12/22, 9:13 - Ana: https://example.com/página?x=1.
+15/12/22, 0:05 - Beto: Ya es otro día
+15/12/22, 0:06 - Beto salió del grupo
+15/12/22, 0:07 - Ana cambió el asunto de "Equipo Fantasma: v1" a "Equipo Fantasma 2"
+31/12/22, 23:59 - Ana: ¡Feliz año!
+01/01/23, 0:00 - Ana: 🎉

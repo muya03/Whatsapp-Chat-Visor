@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(18 14) rotate(-14 12 12) scale(1.45)"><path d="M4 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-9l-5 4v-4H7a3 3 0 0 1-3-3z"/><path d="M8 9h8M8 13h5"/></g>
+  <g transform="translate(120 30) rotate(10 12 12) scale(1.35)"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></g>
+  <g transform="translate(214 8) rotate(-8 12 12) scale(1.4)"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></g>
+  <g transform="translate(300 40) rotate(16 12 12) scale(1.4)"><circle cx="12" cy="12" r="9"/><path d="M8.5 10h.01M15.5 10h.01M8 14.5c1 1.6 2.5 2.5 4 2.5s3-.9 4-2.5"/></g>
+  <g transform="translate(60 112) rotate(8 12 12) scale(1.4)"><path d="M3 8h4l2-3h6l2 3h4v11H3z"/><circle cx="12" cy="13" r="3.5"/></g>
+  <g transform="translate(162 104) rotate(-18 12 12) scale(1.4)"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></g>
+  <g transform="translate(256 118) rotate(12 12 12) scale(1.4)"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></g>
+  <g transform="translate(336 112) rotate(-10 12 12) scale(1.3)"><path d="M7 18a4 4 0 0 1-.5-8A6 6 0 0 1 18 8.5 4.5 4.5 0 0 1 17.5 18z"/></g>
+  <g transform="translate(10 202) rotate(14 12 12) scale(1.4)"><path d="M21 3L3 10.5l7 2.5 2.5 7z"/><path d="M10 13l5-5"/></g>
+  <g transform="translate(108 196) rotate(-6 12 12) scale(1.4)"><path d="M12 3a6 6 0 0 0-6 6c0 4 4 7.5 6 8 2-.5 6-4 6-8a6 6 0 0 0-6-6z"/><path d="M12 17l-1 2h2zM12 19c0 1.5 1 2 1 3"/></g>
+  <g transform="translate(206 210) rotate(10 12 12) scale(1.4)"><path d="M5 8h12v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5zM17 9h2a2.5 2.5 0 0 1 0 5h-2M8 3v2M11 3v2M14 3v2"/></g>
+  <g transform="translate(296 200) rotate(-14 12 12) scale(1.4)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
+  <g transform="translate(40 292) rotate(-10 12 12) scale(1.4)"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></g>
+  <g transform="translate(140 296) rotate(12 12 12) scale(1.4)"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13"/><path d="M12 7C9 7 8 3 10.5 3 12 3 12 5 12 7zM12 7c3 0 4-4 1.5-4C12 3 12 5 12 7z"/></g>
+  <g transform="translate(236 300) rotate(-8 12 12) scale(1.4)"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21a2 2 0 0 0 4 0"/></g>
+  <g transform="translate(326 292) rotate(10 12 12) scale(1.4)"><path d="M3 12a9 9 0 0 1 18 0zM12 12v7a2 2 0 0 0 4 0"/></g>
+</svg>

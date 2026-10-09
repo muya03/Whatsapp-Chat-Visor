@@ -1,0 +1,9 @@
+‎[12/14/22, 9:00:01 AM] Alice: ‎Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them.
+‎[12/14/22, 9:00:30 AM] Alice: Hi Bob!
+[12/14/22, 9:01:02 AM] Bob: Hey, how are you?
+‎[12/14/22, 9:02:00 AM] Bob: ‎<attached: 00000003-PHOTO-2022-12-14-09-02-00.jpg>
+‎[12/14/22, 9:02:10 AM] Alice: ‎image omitted
+‎[12/14/22, 12:30:00 PM] Alice: ‎Missed voice call
+‎[12/14/22, 12:31:00 PM] Bob: ‎Voice call, 2 min
+[12/14/22, 11:59:59 PM] Alice: Good night
+[12/15/22, 12:00:00 AM] Bob: it's after midnight

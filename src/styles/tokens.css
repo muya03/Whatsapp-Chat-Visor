@@ -1,0 +1,126 @@
+/*
+ * Tokens de diseño NO cromáticos: tipografía, medidas, radios, movimiento.
+ * Fuente única de verdad: ningún componente usa valores visuales sueltos.
+ * El "skin" (web / android / ios) solo redefine tokens; los componentes son los mismos.
+ */
+:root {
+  --font-web: 'Segoe UI', 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, Ubuntu, Cantarell, 'Fira Sans', sans-serif;
+  --font-android: system-ui, Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-ios: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* Skin por defecto: WhatsApp Web */
+  --font-ui: var(--font-web);
+  --fs-msg: 14.2px;
+  --lh-msg: 19px;
+  --fs-time: 11px;
+  --fs-sender: 12.8px;
+  --fs-title: 16px;
+  --fs-subtitle: 13px;
+  --fs-chip: 12.5px;
+  --fs-list-title: 17px;
+  --fs-list-sub: 14px;
+
+  --bubble-radius: 7.5px;
+  --bubble-pad-block-start: 6px;
+  --bubble-pad-block-end: 8px;
+  --bubble-pad-inline: 9px;
+  --bubble-max: 65%;
+  --bubble-gap-same: 2px;
+  --bubble-gap-new: 12px;
+  --bubble-tail-w: 8px;
+  --chat-gutter: clamp(12px, 6%, 80px);
+  --media-max-w: 330px;
+  --media-max-h: 360px;
+  --meta-w: 46px; /* hueco que reserva el texto para la hora (24 h) */
+  --meta-w-12h: 74px;
+
+  --header-h: 59px;
+  --header-pad-inline: 16px;
+  --footer-h: 62px;
+  --list-item-h: 72px;
+  --avatar-header: 40px;
+  --avatar-list: 49px;
+  --avatar-info: 200px;
+  --left-panel-w: clamp(340px, 30vw, 480px);
+  --drawer-w: clamp(340px, 30vw, 440px);
+  --icon: 24px;
+  --icon-sm: 20px;
+  --touch: 44px;
+  --menu-w: 220px;
+  --dialog-w: 440px;
+
+  --radius-chip: 7.5px;
+  --radius-pill: 999px;
+  --radius-card: 8px;
+  --radius-menu: 3px;
+  --radius-dialog: 3px;
+
+  --t-fast: 120ms;
+  --t-med: 200ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+/* ---- Skin Android (WhatsApp para Android, diseño actual) ---- */
+:root[data-skin='android'] {
+  --font-ui: var(--font-android);
+  --fs-msg: 16px;
+  --lh-msg: 21px;
+  --fs-time: 11.5px;
+  --fs-sender: 14px;
+  --fs-title: 18px;
+  --fs-subtitle: 13.5px;
+  --fs-chip: 13px;
+  --bubble-radius: 8px;
+  --bubble-pad-block-start: 6px;
+  --bubble-pad-block-end: 6px;
+  --bubble-pad-inline: 10px;
+  --bubble-max: 82%;
+  --bubble-gap-same: 2px;
+  --bubble-gap-new: 8px;
+  --chat-gutter: 8px;
+  --media-max-w: min(76vw, 340px);
+  --header-h: 56px;
+  --header-pad-inline: 4px;
+  --footer-h: 56px;
+  --meta-w: 50px;
+  --meta-w-12h: 80px;
+}
+
+/* ---- Skin iOS ---- */
+:root[data-skin='ios'] {
+  --font-ui: var(--font-ios);
+  --fs-msg: 16.5px;
+  --lh-msg: 21.5px;
+  --fs-time: 11px;
+  --fs-sender: 14px;
+  --fs-title: 17px;
+  --fs-subtitle: 12.5px;
+  --fs-chip: 12.5px;
+  --bubble-radius: 12px;
+  --bubble-pad-block-start: 6px;
+  --bubble-pad-block-end: 6px;
+  --bubble-pad-inline: 11px;
+  --bubble-max: 78%;
+  --bubble-gap-same: 2px;
+  --bubble-gap-new: 9px;
+  --chat-gutter: 10px;
+  --media-max-w: min(72vw, 330px);
+  --header-h: 52px;
+  --header-pad-inline: 6px;
+  --footer-h: 56px;
+  --meta-w: 50px;
+  --meta-w-12h: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-med: 0ms;
+  }
+}
