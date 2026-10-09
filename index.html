@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Visor de chat · lector local de exportaciones</title>
+    <meta name="description" content="Lee una exportación de chat de WhatsApp (TXT o ZIP) con el aspecto de la aplicación. Todo se procesa en tu dispositivo." />
+    <meta name="theme-color" content="#f0f2f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#202c33" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Visor de chat" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script src="./theme-init.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Esta aplicación necesita JavaScript para leer tus archivos localmente.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
